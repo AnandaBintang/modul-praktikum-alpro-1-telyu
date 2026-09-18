@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%">
+  <rect width="800" height="240" fill="#0f172a" rx="12"/>
+  <text x="400" y="36" fill="#f8fafc" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle">INTEGER DIVISION (DIV) VS MODULO (MOD)</text>
+
+  <!-- Expression -->
+  <g transform="translate(80, 65)">
+    <rect width="300" height="140" fill="#1e293b" stroke="#3b82f6" stroke-width="2" rx="8"/>
+    <text x="150" y="32" fill="#60a5fa" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle">Operasi Pembagian Integer: 14 / 4</text>
+    <text x="150" y="65" fill="#cbd5e1" font-family="sans-serif" font-size="13" text-anchor="middle">14 kue dibagi rata ke 4 anak</text>
+    <rect x="30" y="80" width="240" height="40" fill="#0f172a" rx="6"/>
+    <text x="150" y="105" fill="#38bdf8" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">hasil = 14 / 4  // 3 kue</text>
+    <text x="150" y="132" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">(bagian desimal .5 dibuang)</text>
+  </g>
+
+  <g transform="translate(420, 65)">
+    <rect width="300" height="140" fill="#1e293b" stroke="#f59e0b" stroke-width="2" rx="8"/>
+    <text x="150" y="32" fill="#fbbf24" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle">Operasi Modulo: 14 % 4</text>
+    <text x="150" y="65" fill="#cbd5e1" font-family="sans-serif" font-size="13" text-anchor="middle">Sisa kue yang tidak terbagi rata</text>
+    <rect x="30" y="80" width="240" height="40" fill="#0f172a" rx="6"/>
+    <text x="150" y="105" fill="#fbbf24" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">sisa = 14 % 4   // 2 sisa</text>
+    <text x="150" y="132" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">14 = (3 * 4) + 2</text>
+  </g>
+</svg>
