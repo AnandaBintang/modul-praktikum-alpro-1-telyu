@@ -14,6 +14,11 @@ Bayangkan RAM komputermu adalah gudang raksasa yang terdiri dari jutaan rak bern
 
 ![Analogi Variabel dan Alamat Memori](../assets/images/memory-variable-box.svg)
 
+### Simulasi Animasi Memori Variabel
+Berikut visualisasi pergerakan data saat sebuah variabel dideklarasikan, diisi nilai, dan diakses alamat memorinya:
+
+![Animasi Alokasi Memori Variabel](../assets/images/variable-memory-animation.gif)
+
 ---
 
 ## 2. Diagram Alur Operasi Input dan Output

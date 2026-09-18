@@ -15,6 +15,11 @@ Bayangkan kamu sedang mengikuti tes lari keliling lapangan bola sebanyak 5 putar
 
 ![Anatomi For Loop](../assets/images/for-loop-iteration.svg)
 
+### Simulasi Animasi Siklus Putaran For-Loop
+Berikut adalah animasi pelacakan (trace) nilai variabel counter `i` pada setiap tahapan perulangan Go:
+
+![Animasi Eksekusi For Loop](../assets/images/for-loop-animation.gif)
+
 ---
 
 ## 2. Diagram Alur For-Loop

@@ -22,6 +22,12 @@ flowchart LR
     E -->|Eksekusi di Terminal| F[CPU & RAM Berjalan Cepat]
 ```
 
+## Visualisasi Konsep Interaktif & Animasi
+
+Repositori ini memadukan diagram alur Mermaid interaktif, sketsa vektor SVG, serta animasi GIF lokal untuk menyimulasikan eksekusi kode Go di memori dan CPU:
+
+![Animasi Eksekusi For Loop](assets/images/for-loop-animation.gif)
+
 ---
 
 ## Prasyarat dan Persiapan Lingkungan

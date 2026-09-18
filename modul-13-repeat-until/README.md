@@ -14,6 +14,11 @@ Bayangkan seorang koki sedang memasak sup:
 
 ![Repeat Until Cycle](../assets/images/repeat-until-cycle.svg)
 
+### Simulasi Animasi Repeat-Until (Eksekusi 1x di Depan)
+Perhatikan aksi tebakan input yang selalu dijalankan terlebih dahulu sebelum kondisi dicek di akhir:
+
+![Animasi Repeat Until](../assets/images/repeat-until-animation.gif)
+
 ---
 
 ## 2. Diagram Alur: While-Loop vs Repeat-Until

@@ -14,6 +14,11 @@ Bayangkan kamu sedang mengendarai kendaraan di jalan raya bercabang banyak:
 
 Komputer mengevaluasi rambu satu per satu: jika kondisi pertama sudah cocok, komputer langsung mengambil jalan tersebut dan mengabaikan pengecekan jalur-jalur di bawahnya.
 
+### Simulasi Animasi Evaluasi Berjenjang
+Perhatikan alur perpindahan saat sistem menguji rentang nilai dari batas teratas hingga jatuh ke blok aksi yang cocok:
+
+![Animasi Evaluasi Else-If](../assets/images/if-else-animation.gif)
+
 ```mermaid
 flowchart TD
     Start([Mulai]) --> C1{Kondisi 1?}

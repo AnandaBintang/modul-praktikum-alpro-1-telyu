@@ -13,6 +13,11 @@ Setiap kali perulangan luar maju 1 langkah baris, perulangan dalam harus berputa
 
 ![Perulangan Bersarang](../assets/images/nested-loop-grid.svg)
 
+### Simulasi Animasi Grid Matriks (Baris & Kolom)
+Perhatikan bagaimana perulangan kolom di dalam menyelesaikan seluruh iterasi horizontal sebelum baris berikutnya bergerak:
+
+![Animasi Nested Loop Grid](../assets/images/nested-loop-animation.gif)
+
 ---
 
 ## 2. Diagram Alur Nested Loop

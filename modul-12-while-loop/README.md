@@ -14,6 +14,11 @@ Jika sejak awal tidak ada orang sama sekali, pintu tidak akan pernah terbuka (0 
 
 ![While Loop Gate](../assets/images/while-loop-gate.svg)
 
+### Simulasi Animasi While-Loop (Kondisi di Depan)
+Perhatikan penurunan nilai variabel kondisi di setiap putaran hingga akhirnya loop berhenti saat kondisi menjadi false:
+
+![Animasi While Loop](../assets/images/while-loop-animation.gif)
+
 ---
 
 ## 2. Implementasi While-Loop di Go

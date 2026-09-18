@@ -17,6 +17,11 @@ Bayangkan sebuah mesin pemindai barcode otomatis pada ban berjalan di pusat logi
 
 ![Skema Pemrosesan Sekuensial](../assets/images/sequential-stream.svg)
 
+### Simulasi Animasi Pemrosesan Sekuensial dengan Marker
+Berikut animasi aliran data stream yang terus diakumulasi hingga pembacaan marker menghentikan loop:
+
+![Animasi Stream Sekuensial](../assets/images/sequential-stream-animation.gif)
+
 ---
 
 ## 2. Empat Pola Pemrosesan Sekuensial Standar

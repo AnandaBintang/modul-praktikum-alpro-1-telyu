@@ -14,6 +14,11 @@ Bayangkan sebuah gerbang tol otomatis:
 
 ![Percabangan Logika](../assets/images/decision-railway.svg)
 
+### Simulasi Animasi Percabangan
+Berikut alur visual saat sebuah nilai masukan diuji melewati gerbang logika:
+
+![Animasi Alur Percabangan](../assets/images/if-else-animation.gif)
+
 ---
 
 ## 2. Diagram Alur Percabangan If-Then
