@@ -14,10 +14,14 @@ Bayangkan kamu sedang mengendarai kendaraan di jalan raya bercabang banyak:
 
 Komputer mengevaluasi rambu satu per satu: jika kondisi pertama sudah cocok, komputer langsung mengambil jalan tersebut dan mengabaikan pengecekan jalur-jalur di bawahnya.
 
-### Simulasi Animasi Evaluasi Berjenjang
-Perhatikan alur perpindahan saat sistem menguji rentang nilai dari batas teratas hingga jatuh ke blok aksi yang cocok:
-
-![Animasi Evaluasi Else-If](../assets/images/if-else-animation.gif)
+## Ilustrasi Evaluasi Percabangan Else-If
+![](../assets/images/if-else-animation.gif)<br>
+Kotak **biru** di sebelah kiri menampilkan data nilai masukan yang sedang diuji, kotak **hijau** menunjukkan cabang kondisi yang bernilai **true** dan jalurnya diambil, sedangkan kotak **abu-abu/merah** menunjukkan cabang yang tidak memenuhi syarat sehingga dilewati ke jenjang berikutnya.<br><br>
+Mari kita bedah contoh pengujian berbagai nilai:
+- **Kasus Nilai 85:** Pengujian pertama `nilai >= 80` langsung menghasilkan **true**. Program langsung memilih **Indeks A** dan mengabaikan semua pengecekan di bawahnya.
+- **Kasus Nilai 72:** Pengujian pertama `72 >= 80` menghasilkan false. Program turun ke cabang kedua `72 >= 70` yang bernilai **true**, sehingga dipilih **Indeks B**.
+- **Kasus Nilai 64:** Pengujian pertama dan kedua false. Cabang ketiga `64 >= 60` bernilai **true**, sehingga dipilih **Indeks C**.
+- **Kasus Nilai 45:** Seluruh kondisi dari `nilai >= 80`, `>= 70`, hingga `>= 60` bernilai false. Secara otomatis alur jatuh ke blok terakhir (`else`), yaitu **Indeks E**.
 
 ```mermaid
 flowchart TD

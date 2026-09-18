@@ -14,10 +14,13 @@ Bayangkan seorang koki sedang memasak sup:
 
 ![Repeat Until Cycle](../assets/images/repeat-until-cycle.svg)
 
-### Simulasi Animasi Repeat-Until (Eksekusi 1x di Depan)
-Perhatikan aksi tebakan input yang selalu dijalankan terlebih dahulu sebelum kondisi dicek di akhir:
-
-![Animasi Repeat Until](../assets/images/repeat-until-animation.gif)
+## Ilustrasi Perulangan Repeat-Until
+![](../assets/images/repeat-until-animation.gif)<br>
+Kotak **biru** di sebelah kiri merupakan aksi pembacaan input tebakan yang **pasti dijalankan minimal satu kali**, sedangkan kotak di sebelah kanan merupakan sensor penguji kondisi di akhir perulangan (`if tebakan == KUNCI`).<br><br>
+Mari kita bedah proses tebakan angka rahasia (kunci = 42):
+- **Percobaan 1:** Pengguna memasukkan tebakan `15`. Aksi input berhasil dibaca terlebih dahulu, baru kemudian sensor mengecek: `15 == 42` -> **false**. Perulangan berlanjut ke putaran kedua.
+- **Percobaan 2:** Pengguna memasukkan tebakan `30`. Sensor di akhir mengecek: `30 == 42` -> **false**. Perulangan berlanjut ke putaran ketiga.
+- **Percobaan 3:** Pengguna memasukkan tebakan `42`. Sensor di akhir mengecek: `42 == 42` -> **true**. Perintah `break` seketika dieksekusi dan program keluar dari loop.
 
 ---
 

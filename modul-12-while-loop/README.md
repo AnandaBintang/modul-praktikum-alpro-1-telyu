@@ -14,10 +14,13 @@ Jika sejak awal tidak ada orang sama sekali, pintu tidak akan pernah terbuka (0 
 
 ![While Loop Gate](../assets/images/while-loop-gate.svg)
 
-### Simulasi Animasi While-Loop (Kondisi di Depan)
-Perhatikan penurunan nilai variabel kondisi di setiap putaran hingga akhirnya loop berhenti saat kondisi menjadi false:
-
-![Animasi While Loop](../assets/images/while-loop-animation.gif)
+## Ilustrasi Perulangan Kondisi (While-Loop)
+![](../assets/images/while-loop-animation.gif)<br>
+Bar indikator **hijau** di sebelah kanan menggambarkan status kapasitas variabel kondisi (`energi`), sedangkan teks di bagian bawah menampilkan status gerbang pintu masuk perulangan.<br><br>
+Mari kita bedah bagaimana gerbang perulangan ini bekerja:
+- **Kondisi Awal (`energi = 4`):** Sebelum masuk ke badan loop, komputer mengecek gerbang: `4 > 0 ?` -> **True**. Gerbang terbuka, aksi `kerja()` dieksekusi, dan nilai energi dikurangi satu (`energi--`).
+- **Putaran Berlanjut:** Pada energi 3, 2, dan 1, gerbang selalu mengecek terlebih dahulu di depan dan mengizinkan eksekusi karena nilainya masih lebih besar dari nol.
+- **Gerbang Terkunci (`energi = 0`):** Saat energi bernilai 0, evaluasi kondisi `0 > 0` menghasilkan **false**. Gerbang seketika terkunci rapat dan perulangan langsung berhenti tanpa mengeksekusi badan perulangan lagi.
 
 ---
 

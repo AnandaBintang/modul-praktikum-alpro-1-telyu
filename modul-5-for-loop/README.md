@@ -15,10 +15,15 @@ Bayangkan kamu sedang mengikuti tes lari keliling lapangan bola sebanyak 5 putar
 
 ![Anatomi For Loop](../assets/images/for-loop-iteration.svg)
 
-### Simulasi Animasi Siklus Putaran For-Loop
-Berikut adalah animasi pelacakan (trace) nilai variabel counter `i` pada setiap tahapan perulangan Go:
-
-![Animasi Eksekusi For Loop](../assets/images/for-loop-animation.gif)
+## Ilustrasi Eksekusi For-Loop
+![](../assets/images/for-loop-animation.gif)<br>
+Warna **biru** pada kotak di sebelah atas merupakan **variabel pencacah (counter `i`)** yang sedang aktif pada iterasi saat ini, kotak **hijau** di sebelah bawah merupakan **wadah akumulator (`total`)**, dan panel **ungu** di kanan menunjukkan operasi aritmatika penambahan yang berlangsung pada tiap putaran.<br><br>
+Mari kita bedah proses berjalannya perulangan tersebut dari tiap iterasinya:
+- **Iterasi 1:** Nilai awal `i = 1`. Kondisi `1 <= 4` dievaluasi dan bernilai **true**. Komputer masuk ke badan loop dan mengeksekusi `total += 1`, sehingga isi wadah total berubah dari 0 menjadi **1**.
+- **Iterasi 2:** Pencacah `i++` menaikkan nilai `i` menjadi 2. Kondisi `2 <= 4` bernilai **true**. Nilai 2 ditambahkan ke wadah: `1 + 2 = 3`.
+- **Iterasi 3:** Pencacah `i++` menaikkan nilai `i` menjadi 3. Kondisi `3 <= 4` bernilai **true**. Nilai 3 ditambahkan ke wadah: `3 + 3 = 6`.
+- **Iterasi 4:** Pencacah `i++` menaikkan nilai `i` menjadi 4. Kondisi `4 <= 4` bernilai **true**. Nilai 4 ditambahkan ke wadah: `6 + 4 = 10`.
+- **Iterasi 5 (Terminasi):** Pencacah `i++` menaikkan nilai `i` menjadi 5. Kondisi `5 <= 4` bernilai **false**. Komputer keluar dari perulangan dan mencetak hasil akhir `total = 10`.
 
 ---
 

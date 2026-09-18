@@ -17,10 +17,14 @@ Bayangkan sebuah mesin pemindai barcode otomatis pada ban berjalan di pusat logi
 
 ![Skema Pemrosesan Sekuensial](../assets/images/sequential-stream.svg)
 
-### Simulasi Animasi Pemrosesan Sekuensial dengan Marker
-Berikut animasi aliran data stream yang terus diakumulasi hingga pembacaan marker menghentikan loop:
-
-![Animasi Stream Sekuensial](../assets/images/sequential-stream-animation.gif)
+## Ilustrasi Pemrosesan Sekuensial dengan Marker
+![](../assets/images/sequential-stream-animation.gif)<br>
+Pita di bagian atas menggambarkan aliran data yang masuk secara berurutan (*stream*). Kotak **hijau** merupakan elemen data valid yang sedang diproses dan diakumulasi ke dalam total nilai, sedangkan kotak **merah** merupakan **marker/sentinel (`-999`)** yang bertugas sebagai sinyal akhir aliran data.<br><br>
+Mari kita bedah proses pembacaan sekuensialnya:
+- **Elemen 1:** Komputer membaca nilai `14`. Karena `14 != -999`, nilai 14 ditambahkan ke total akumulator (`total = 14`, banyak data = 1).
+- **Elemen 2:** Membaca nilai `28`. Bukan marker, nilai ditambahkan: `14 + 28 = 42` (banyak data = 2).
+- **Elemen 3:** Membaca nilai `35`. Bukan marker, nilai ditambahkan: `42 + 35 = 77` (banyak data = 3).
+- **Elemen 4 (Marker):** Komputer membaca nilai `-999`. Kondisi `x != -999` menghasilkan **false**. Aliran pembacaan seketika dihentikan, dan komputer menghitung nilai rata-rata akhir dari 3 data valid sebelumnya: $77 / 3 = 25.67$.
 
 ---
 

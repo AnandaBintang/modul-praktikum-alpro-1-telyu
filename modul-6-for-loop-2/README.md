@@ -13,10 +13,21 @@ Setiap kali perulangan luar maju 1 langkah baris, perulangan dalam harus berputa
 
 ![Perulangan Bersarang](../assets/images/nested-loop-grid.svg)
 
-### Simulasi Animasi Grid Matriks (Baris & Kolom)
-Perhatikan bagaimana perulangan kolom di dalam menyelesaikan seluruh iterasi horizontal sebelum baris berikutnya bergerak:
-
-![Animasi Nested Loop Grid](../assets/images/nested-loop-animation.gif)
+## Ilustrasi Perulangan Bersarang (Nested Loop)
+![](../assets/images/nested-loop-animation.gif)<br>
+Warna **kuning** pada penunjuk kode merupakan perulangan luar yang mengontrol **nomor baris (`i`)**, warna **biru langit** merupakan perulangan dalam yang mengontrol **nomor kolom (`j`)**, dan kotak **hijau terang** pada matriks merupakan sel koordinat `(i, j)` yang sedang aktif dicetak pada saat itu.<br><br>
+Mari kita bedah proses pergerakan iterasinya:
+- **Baris 1 (`i = 1`):** 
+  - Kolom `j = 1` -> Cetak bintang pada koordinat (1, 1).
+  - Kolom `j = 2` -> Cetak bintang pada koordinat (1, 2).
+  - Kolom `j = 3` -> Cetak bintang pada koordinat (1, 3).
+  - *Inner loop selesai.* Eksekusi `fmt.Println()` untuk pindah ke baris layar berikutnya.
+- **Baris 2 (`i = 2`):**
+  - Perulangan luar naik ke baris 2. Inner loop kembali mengulang dari awal: `j = 1`, `j = 2`, dan `j = 3` mencetak 3 bintang di baris kedua.
+  - Pindah ke baris layar berikutnya.
+- **Baris 3 (`i = 3`):**
+  - Perulangan luar naik ke baris 3. Inner loop kembali berputar penuh dari `j = 1` hingga `j = 3` mencetak 3 bintang di baris ketiga.
+  - Seluruh perulangan selesai dengan total 9 bintang terbentuk sempurna dalam format matriks 3 x 3.
 
 ---
 

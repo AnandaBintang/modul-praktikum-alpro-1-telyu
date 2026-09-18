@@ -14,10 +14,14 @@ Bayangkan RAM komputermu adalah gudang raksasa yang terdiri dari jutaan rak bern
 
 ![Analogi Variabel dan Alamat Memori](../assets/images/memory-variable-box.svg)
 
-### Simulasi Animasi Memori Variabel
-Berikut visualisasi pergerakan data saat sebuah variabel dideklarasikan, diisi nilai, dan diakses alamat memorinya:
-
-![Animasi Alokasi Memori Variabel](../assets/images/variable-memory-animation.gif)
+## Ilustrasi Konsep Memori dan Variabel
+![](../assets/images/variable-memory-animation.gif)<br>
+Warna **biru** merupakan label pengenal variabel (`skor`), warna **kuning** merupakan alamat fisik tempat data disimpan di RAM (`&skor` berupa bilangan heksadesimal seperti `0xc000028080`), dan isi kotak di tengah merupakan **nilai data** yang dapat dimanipulasi sewaktu-waktu.<br><br>
+Untuk lebih memahami cara komputer mengelola variabel, mari kita bedah prosesnya langkah demi langkah:
+1. **Deklarasi & Inisialisasi Awal:** Saat baris `var skor int = 100` dijalankan, komputer memesan kavling memori kosong di RAM dan mengisinya dengan angka 100.
+2. **Manipulasi Nilai di Tempat:** Saat instruksi `skor = skor + 25` dieksekusi, nilai di dalam kavling yang sama diperbarui menjadi 125 tanpa berpindah alamat memori.
+3. **Operasi Perkalian:** Instruksi `skor = skor * 2` melipatgandakan nilai di alamat tersebut menjadi 250.
+4. **Penimpaan Nilai dari Input Pengguna:** Melalui instruksi `fmt.Scan(&skor)`, kita memberikan alamat fisik kavling (`&skor`) kepada fungsi Scan, sehingga nilai masukan baru (misal 500) langsung dituliskan menggantikan nilai sebelumnya.
 
 ---
 
